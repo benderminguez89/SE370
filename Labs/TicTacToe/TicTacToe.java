@@ -99,8 +99,8 @@ public class TicTacToe
                 (board[0][2] == 'O' && board[1][2] == 'O' && board[2][2] == 'O') ||//vertical O 3rd column
                 (board[0][0] == 'X' && board[1][1] == 'X' && board[2][2] == 'X') ||// diagonal X L -> R
                 (board[0][0] == 'O' && board[1][1] == 'O' && board[2][2] == 'O') ||// diagonal O L -> R
-                (board[2][0] == 'X' && board[1][1] == 'X' && board[0][2] == 'X') ||// diagonal X L -> R
-                (board[2][0] == 'O' && board[1][1] == 'O' && board[0][2] == 'O')) // diagonal O L -> R
+                (board[2][0] == 'X' && board[1][1] == 'X' && board[0][2] == 'X') ||// diagonal X R -> L
+                (board[2][0] == 'O' && board[1][1] == 'O' && board[0][2] == 'O')) // diagonal O R -> L
         {
             gameOver = true;
             this.status = Status.WIN;
